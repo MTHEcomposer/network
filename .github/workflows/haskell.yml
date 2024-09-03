@@ -71,7 +71,7 @@ jobs:
         ghc-version: ${{ matrix.ghc }}
         cabal-version: '3.4.1.0'
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: configure
 
@@ -130,7 +130,7 @@ jobs:
       with:
         cabal-version: '3.4'
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: configure
 
